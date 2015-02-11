@@ -1,4 +1,4 @@
-package com.rooney.dealbrowserpoc.nameyourprice.fragments;
+package com.rooney.poc.nameyourprice.fragments;
 
 import android.app.Activity;
 import android.app.ListFragment;
@@ -11,12 +11,12 @@ import android.widget.Toast;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
-import com.rooney.dealbrowserpoc.nameyourprice.activities.MainActivity;
-import com.rooney.dealbrowserpoc.nameyourprice.adapters.ListItemAdapter;
-import com.rooney.dealbrowserpoc.nameyourprice.models.DealContent;
-import com.rooney.dealbrowserpoc.nameyourprice.models.DealItem;
-import com.rooney.dealbrowserpoc.nameyourprice.models.ResponseObject;
-import com.rooney.dealbrowserpoc.nameyourprice.network.GsonRequest;
+import com.rooney.poc.nameyourprice.activities.MainActivity;
+import com.rooney.poc.nameyourprice.adapters.ListItemAdapter;
+import com.rooney.poc.nameyourprice.models.DealContent;
+import com.rooney.poc.nameyourprice.models.DealItem;
+import com.rooney.poc.nameyourprice.models.ResponseObject;
+import com.rooney.poc.nameyourprice.network.GsonRequest;
 
 import java.util.ArrayList;
 

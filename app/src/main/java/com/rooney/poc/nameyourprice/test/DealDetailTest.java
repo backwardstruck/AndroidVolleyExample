@@ -1,9 +1,9 @@
-package com.rooney.dealbrowserpoc.nameyourprice.test;
+package com.rooney.poc.nameyourprice.test;
 
 import android.os.Bundle;
 import android.test.InstrumentationTestCase;
 
-import com.rooney.dealbrowserpoc.nameyourprice.fragments.ItemDetailFragment;
+import com.rooney.poc.nameyourprice.fragments.ItemDetailFragment;
 
 /**
  * Class to test

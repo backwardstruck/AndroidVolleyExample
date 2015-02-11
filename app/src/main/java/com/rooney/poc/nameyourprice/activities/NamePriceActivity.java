@@ -1,4 +1,4 @@
-package com.rooney.dealbrowserpoc.nameyourprice.activities;
+package com.rooney.poc.nameyourprice.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
-import com.rooney.dealbrowserpoc.nameyourprice.R;
+import com.rooney.poc.nameyourprice.R;
 
 public class NamePriceActivity extends Activity {
 

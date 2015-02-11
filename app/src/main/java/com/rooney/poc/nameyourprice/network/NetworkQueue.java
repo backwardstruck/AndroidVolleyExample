@@ -2,7 +2,7 @@
  * Created by Eric on 1/18/15.
  */
 
-package com.rooney.dealbrowserpoc.nameyourprice.network;
+package com.rooney.poc.nameyourprice.network;
 
 import android.content.Context;
 import android.graphics.Bitmap;

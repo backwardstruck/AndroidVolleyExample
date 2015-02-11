@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rooney.dealbrowserpoc.nameyourprice"
+    package="com.rooney.poc.nameyourprice"
     android:versionCode="1"
     android:versionName="1">
 
@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.rooney.dealbrowserpoc.nameyourprice.activities.MainActivity"
+            android:name="com.rooney.poc.nameyourprice.activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,7 @@
         </activity>
         <activity
             android:theme="@style/Dialog"
-            android:name="com.rooney.dealbrowserpoc.nameyourprice.activities.NamePriceActivity"
+            android:name="com.rooney.poc.nameyourprice.activities.NamePriceActivity"
             android:label="@string/name_your_price" >
         </activity>
     </application>

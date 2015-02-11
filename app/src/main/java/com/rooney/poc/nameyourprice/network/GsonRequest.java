@@ -1,4 +1,4 @@
-package com.rooney.dealbrowserpoc.nameyourprice.network;
+package com.rooney.poc.nameyourprice.network;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkResponse;

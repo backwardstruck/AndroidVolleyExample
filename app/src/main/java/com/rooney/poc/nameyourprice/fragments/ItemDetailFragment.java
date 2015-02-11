@@ -1,4 +1,4 @@
-package com.rooney.dealbrowserpoc.nameyourprice.fragments;
+package com.rooney.poc.nameyourprice.fragments;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -18,10 +18,10 @@ import android.widget.Toast;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageRequest;
-import com.rooney.dealbrowserpoc.nameyourprice.R;
-import com.rooney.dealbrowserpoc.nameyourprice.activities.MainActivity;
-import com.rooney.dealbrowserpoc.nameyourprice.activities.NamePriceActivity;
-import com.rooney.dealbrowserpoc.nameyourprice.models.DealContent;
+import com.rooney.poc.nameyourprice.R;
+import com.rooney.poc.nameyourprice.activities.MainActivity;
+import com.rooney.poc.nameyourprice.activities.NamePriceActivity;
+import com.rooney.poc.nameyourprice.models.DealContent;
 
 public class ItemDetailFragment extends Fragment {
 

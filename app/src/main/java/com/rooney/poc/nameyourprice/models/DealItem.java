@@ -1,4 +1,4 @@
-package com.rooney.dealbrowserpoc.nameyourprice.models;
+package com.rooney.poc.nameyourprice.models;
 
 import android.graphics.Bitmap;
 

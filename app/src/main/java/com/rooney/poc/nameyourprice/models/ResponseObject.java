@@ -1,4 +1,4 @@
-package com.rooney.dealbrowserpoc.nameyourprice.models;
+package com.rooney.poc.nameyourprice.models;
 
 /**
  * Contains network response for deals
