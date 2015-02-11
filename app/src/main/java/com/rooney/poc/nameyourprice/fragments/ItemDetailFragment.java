@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -55,7 +54,6 @@ public class ItemDetailFragment extends Fragment {
 
         final ImageView deal_detail_image_view = (ImageView) view.findViewById(R.id.deal_detail_image_view);
         TextView deal_price = (TextView) view.findViewById(R.id.deal_price);
-        TextView deal_price_old = (TextView) view.findViewById(R.id.deal_price_old);
         TextView deal_title = (TextView) view.findViewById(R.id.deal_title);
         TextView deal_description = (TextView) view.findViewById(R.id.deal_description);
         final ImageView fullview = (ImageView) view.findViewById(R.id.fullview);
@@ -83,8 +81,6 @@ public class ItemDetailFragment extends Fragment {
             } else {
                 deal_price.setText(ItemContent.ITEMS.get(mIndex).salePrice);
             }
-            deal_price_old.setText(ItemContent.ITEMS.get(mIndex).price);
-            deal_price_old.setPaintFlags(deal_price_old.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
             deal_title.setText(ItemContent.ITEMS.get(mIndex).title);
             deal_description.setText(ItemContent.ITEMS.get(mIndex).description);
         } catch (NullPointerException e) {

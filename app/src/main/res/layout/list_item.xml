@@ -56,7 +56,9 @@
                 android:contentDescription="price"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:fontFamily="sans-serif"/>
+                android:fontFamily="sans-serif"
+                android:textColor="@color/azure"
+                />
 
         </RelativeLayout>
     </LinearLayout>
