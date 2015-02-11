@@ -8,7 +8,7 @@ import com.rooney.poc.nameyourprice.fragments.ItemDetailFragment;
 /**
  * Class to test
  */
-public class DealDetailTest extends InstrumentationTestCase {
+public class ItemDetailTest extends InstrumentationTestCase {
     public void test() throws Exception {
         final int expected = 10;
 
