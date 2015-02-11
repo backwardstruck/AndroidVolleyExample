@@ -12,7 +12,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.rooney.dealbrowserpoc.nameyourprice.activities.MainActivity;
-import com.rooney.dealbrowserpoc.nameyourprice.adapters.DealListItemAdapter;
+import com.rooney.dealbrowserpoc.nameyourprice.adapters.ListItemAdapter;
 import com.rooney.dealbrowserpoc.nameyourprice.models.DealContent;
 import com.rooney.dealbrowserpoc.nameyourprice.models.DealItem;
 import com.rooney.dealbrowserpoc.nameyourprice.models.ResponseObject;
@@ -20,16 +20,16 @@ import com.rooney.dealbrowserpoc.nameyourprice.network.GsonRequest;
 
 import java.util.ArrayList;
 
-public class DealListFragment extends ListFragment {
+public class ItemListFragment extends ListFragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public static DealListFragment newInstance() {
-        DealListFragment fragment = new DealListFragment();
+    public static ItemListFragment newInstance() {
+        ItemListFragment fragment = new ItemListFragment();
         return fragment;
     }
 
-    public DealListFragment() {
+    public ItemListFragment() {
     }
 
     @Override
@@ -118,7 +118,7 @@ public class DealListFragment extends ListFragment {
         }
         DealContent.ITEMS = items;
 
-        setListAdapter(new DealListItemAdapter(getActivity(), DealContent.ITEMS));
+        setListAdapter(new ListItemAdapter(getActivity(), DealContent.ITEMS));
 
         //get the images
         getDealItemImages();
@@ -151,7 +151,7 @@ public class DealListFragment extends ListFragment {
                                 if(image != null){
                                     DealContent.ITEMS.get(index).imageBitmap = image;
                                     //Successfully loaded image
-                                    ((DealListItemAdapter)getListAdapter()).notifyDataSetChanged();
+                                    ((ListItemAdapter)getListAdapter()).notifyDataSetChanged();
                                 }
 
                             }

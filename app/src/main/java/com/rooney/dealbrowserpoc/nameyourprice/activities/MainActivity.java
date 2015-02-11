@@ -21,14 +21,14 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.ImageRequest;
 import com.rooney.dealbrowserpoc.nameyourprice.R;
-import com.rooney.dealbrowserpoc.nameyourprice.fragments.DealDetailFragment;
-import com.rooney.dealbrowserpoc.nameyourprice.fragments.DealListFragment;
+import com.rooney.dealbrowserpoc.nameyourprice.fragments.ItemDetailFragment;
+import com.rooney.dealbrowserpoc.nameyourprice.fragments.ItemListFragment;
 import com.rooney.dealbrowserpoc.nameyourprice.network.GsonRequest;
 import com.rooney.dealbrowserpoc.nameyourprice.network.NetworkQueue;
 
 import java.io.ByteArrayOutputStream;
 
-public class MainActivity extends Activity implements DealListFragment.OnFragmentInteractionListener {
+public class MainActivity extends Activity implements ItemListFragment.OnFragmentInteractionListener {
 
     private RequestQueue queue;
     private ShareActionProvider mShareActionProvider;
@@ -39,7 +39,7 @@ public class MainActivity extends Activity implements DealListFragment.OnFragmen
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new DealListFragment())
+                    .add(R.id.container, new ItemListFragment())
                     .commit();
         }
 
@@ -129,7 +129,7 @@ public class MainActivity extends Activity implements DealListFragment.OnFragmen
     public void onFragmentInteraction(int index) {
         // new detail fragment.
         //provide index to detail fragment
-        Fragment newFragment = DealDetailFragment.newInstance(index);
+        Fragment newFragment = ItemDetailFragment.newInstance(index);
 
 
         // add to back stack.

@@ -14,17 +14,17 @@ import com.rooney.dealbrowserpoc.nameyourprice.models.DealItem;
 import java.util.List;
 import java.util.Locale;
 
-public class DealListItemAdapter extends BaseAdapter {
+public class ListItemAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private List<DealItem> dealItems;
     private Context context;
 
 
-    public static DealListItemAdapter newInstance(Context context, List<DealItem> items) {
-        return new DealListItemAdapter(context, items);
+    public static ListItemAdapter newInstance(Context context, List<DealItem> items) {
+        return new ListItemAdapter(context, items);
     }
 
-    public DealListItemAdapter(Context ctx, List<DealItem> items) {
+    public ListItemAdapter(Context ctx, List<DealItem> items) {
         super();
         context = ctx;
         if(context != null){

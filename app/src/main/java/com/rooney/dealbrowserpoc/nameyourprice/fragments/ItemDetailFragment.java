@@ -23,12 +23,12 @@ import com.rooney.dealbrowserpoc.nameyourprice.activities.MainActivity;
 import com.rooney.dealbrowserpoc.nameyourprice.activities.NamePriceActivity;
 import com.rooney.dealbrowserpoc.nameyourprice.models.DealContent;
 
-public class DealDetailFragment extends Fragment {
+public class ItemDetailFragment extends Fragment {
 
     private int mIndex = -1;
 
-    public static DealDetailFragment newInstance(int index) {
-        DealDetailFragment fragment = new DealDetailFragment();
+    public static ItemDetailFragment newInstance(int index) {
+        ItemDetailFragment fragment = new ItemDetailFragment();
 
         // Supply index input as an argument.
         Bundle args = new Bundle();
