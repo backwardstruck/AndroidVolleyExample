@@ -1,0 +1,2 @@
+# AndroidVolleyExample
+ App with a ListView, adapter and detail screen demonstrating the proper use of the Volley HTTP library.  The time saving, code simplifying and performance improving library can be found here: https://android.googlesource.com/platform/frameworks/volley.  This NetworkQueue class is based on the Android docs found here: http://developer.android.com/training/volley/index.html.  
