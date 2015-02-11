@@ -7,7 +7,7 @@ public class ResponseObject {
 
 
     public String _id;
-    public DealItem[] data;
+    public ItemModel[] data;
     public String type;
 
 

@@ -2,7 +2,7 @@ package com.rooney.poc.nameyourprice.models;
 
 import android.graphics.Bitmap;
 
-public class DealItem {
+public class ItemModel {
     public int index;
     public String _id;
     public String title;
@@ -11,7 +11,6 @@ public class DealItem {
     public String salePrice;
     public String image;
     public Bitmap imageBitmap;
-    public String aisle;
     public String guid;
 
 
@@ -19,7 +18,7 @@ public class DealItem {
 
 
 
-    public DealItem(int index, String id, String title, String description, String originalPrice, String salePrice, String image, String aisle) {
+    public ItemModel(int index, String id, String title, String description, String originalPrice, String salePrice, String image) {
         this.index = index;
         this._id = id;
         this.title = title;
@@ -27,7 +26,6 @@ public class DealItem {
         this.price = originalPrice;
         this.salePrice = salePrice;
         this.image = image;
-        this.aisle = aisle;
     }
 
     @Override

@@ -9,39 +9,38 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.rooney.poc.nameyourprice.R;
-import com.rooney.poc.nameyourprice.models.DealItem;
+import com.rooney.poc.nameyourprice.models.ItemModel;
 
 import java.util.List;
-import java.util.Locale;
 
 public class ListItemAdapter extends BaseAdapter {
     private LayoutInflater inflater;
-    private List<DealItem> dealItems;
+    private List<ItemModel> itemModels;
     private Context context;
 
 
-    public static ListItemAdapter newInstance(Context context, List<DealItem> items) {
+    public static ListItemAdapter newInstance(Context context, List<ItemModel> items) {
         return new ListItemAdapter(context, items);
     }
 
-    public ListItemAdapter(Context ctx, List<DealItem> items) {
+    public ListItemAdapter(Context ctx, List<ItemModel> items) {
         super();
         context = ctx;
         if(context != null){
             inflater = LayoutInflater.from(context);
         }
-        dealItems = items;
+        itemModels = items;
     }
 
     @Override
     public int getCount() {
-        return dealItems.size();
+        return itemModels.size();
     }
 
     @Override
     public Object getItem(int position){
         try {
-            return dealItems.get(position);
+            return itemModels.get(position);
         } catch (IndexOutOfBoundsException e) {
             return null;
         }
@@ -57,12 +56,11 @@ public class ListItemAdapter extends BaseAdapter {
         View view;
         ViewHolder holder;
         if(convertView == null) {
-            view = inflater.inflate(R.layout.deal_list_item, parent, false);
+            view = inflater.inflate(R.layout.list_item, parent, false);
             holder = new ViewHolder();
             holder.productImage = (ImageView)view.findViewById(R.id.deal_list_item_image_view);
             holder.title = (TextView)view.findViewById(R.id.deal_list_item_title);
             holder.price = (TextView)view.findViewById(R.id.deal_list_item_price);
-            holder.aisle = (TextView)view.findViewById(R.id.deal_list_item_aisle);
             view.setTag(holder);
         } else {
             view = convertView;
@@ -70,20 +68,17 @@ public class ListItemAdapter extends BaseAdapter {
         }
 
         //set values from data
-        DealItem dealItem = dealItems.get(position);
-        holder.productImage.setImageBitmap(dealItem.imageBitmap);
-        holder.title.setText(dealItem.title);
+        ItemModel itemModel = itemModels.get(position);
+        holder.productImage.setImageBitmap(itemModel.imageBitmap);
+        holder.title.setText(itemModel.title);
         String price = null;
-        if(dealItem.salePrice != null){
-            price = dealItem.salePrice;
+        if(itemModel.salePrice != null){
+            price = itemModel.salePrice;
         } else {
-            price = dealItem.price;
+            price = itemModel.price;
         }
         if(price != null){
             holder.price.setText(price);
-        }
-        if(dealItem.aisle != null){
-            holder.aisle.setText(dealItem.aisle.toUpperCase(Locale.US));
         }
 
         return view;
@@ -91,6 +86,6 @@ public class ListItemAdapter extends BaseAdapter {
 
     private class ViewHolder {
         public ImageView productImage;
-        public TextView title, price, aisle;
+        public TextView title, price;
     }
 }

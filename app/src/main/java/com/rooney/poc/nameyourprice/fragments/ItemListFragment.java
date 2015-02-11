@@ -13,8 +13,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.rooney.poc.nameyourprice.activities.MainActivity;
 import com.rooney.poc.nameyourprice.adapters.ListItemAdapter;
-import com.rooney.poc.nameyourprice.models.DealContent;
-import com.rooney.poc.nameyourprice.models.DealItem;
+import com.rooney.poc.nameyourprice.models.ItemContent;
+import com.rooney.poc.nameyourprice.models.ItemModel;
 import com.rooney.poc.nameyourprice.models.ResponseObject;
 import com.rooney.poc.nameyourprice.network.GsonRequest;
 
@@ -108,17 +108,17 @@ public class ItemListFragment extends ListFragment {
      * Set deals from JSON
      */
     private void setDealContent(ResponseObject response){
-        ArrayList<DealItem> items = new ArrayList<DealItem>();
+        ArrayList<ItemModel> items = new ArrayList<ItemModel>();
         if((response == null) || (response.data == null)){
             return;
         }
-        DealItem[] itemArray = response.data;
+        ItemModel[] itemArray = response.data;
         for (int i = 0; i < itemArray.length; i++){
             items.add(itemArray[i]);
         }
-        DealContent.ITEMS = items;
+        ItemContent.ITEMS = items;
 
-        setListAdapter(new ListItemAdapter(getActivity(), DealContent.ITEMS));
+        setListAdapter(new ListItemAdapter(getActivity(), ItemContent.ITEMS));
 
         //get the images
         getDealItemImages();
@@ -134,11 +134,11 @@ public class ItemListFragment extends ListFragment {
      */
     private void getDealItemImages(){
         String imageURL = null;
-        if(DealContent.ITEMS != null){
-            for(int i = 0; i < DealContent.ITEMS.size(); i++){
-                if(DealContent.ITEMS.get(i) != null){
-                    if(DealContent.ITEMS.get(i).image != null){
-                        imageURL = DealContent.ITEMS.get(i).image;
+        if(ItemContent.ITEMS != null){
+            for(int i = 0; i < ItemContent.ITEMS.size(); i++){
+                if(ItemContent.ITEMS.get(i) != null){
+                    if(ItemContent.ITEMS.get(i).image != null){
+                        imageURL = ItemContent.ITEMS.get(i).image;
 
                         //proceed with the network request
                         final int index = i;
@@ -149,7 +149,7 @@ public class ItemListFragment extends ListFragment {
                                 Bitmap image = null;
                                 image = response.getBitmap();
                                 if(image != null){
-                                    DealContent.ITEMS.get(index).imageBitmap = image;
+                                    ItemContent.ITEMS.get(index).imageBitmap = image;
                                     //Successfully loaded image
                                     ((ListItemAdapter)getListAdapter()).notifyDataSetChanged();
                                 }

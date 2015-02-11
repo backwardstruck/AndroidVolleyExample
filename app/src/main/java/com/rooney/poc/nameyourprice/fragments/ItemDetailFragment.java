@@ -21,7 +21,7 @@ import com.android.volley.toolbox.ImageRequest;
 import com.rooney.poc.nameyourprice.R;
 import com.rooney.poc.nameyourprice.activities.MainActivity;
 import com.rooney.poc.nameyourprice.activities.NamePriceActivity;
-import com.rooney.poc.nameyourprice.models.DealContent;
+import com.rooney.poc.nameyourprice.models.ItemContent;
 
 public class ItemDetailFragment extends Fragment {
 
@@ -43,7 +43,7 @@ public class ItemDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_deal_detail, container, false);
+        View view = inflater.inflate(R.layout.fragment_item_detail, container, false);
 
         mIndex = getArguments().getInt("index", -1);
 
@@ -67,9 +67,9 @@ public class ItemDetailFragment extends Fragment {
 
         //set values
         try {
-            deal_detail_image_view.setImageBitmap(DealContent.ITEMS.get(mIndex).imageBitmap);
+            deal_detail_image_view.setImageBitmap(ItemContent.ITEMS.get(mIndex).imageBitmap);
             //handle null prices
-            if(DealContent.ITEMS.get(mIndex).salePrice == null){
+            if(ItemContent.ITEMS.get(mIndex).salePrice == null){
                 //name you
                 deal_price.setText(getActivity().getString(R.string.name_your_price));
 
@@ -84,12 +84,12 @@ public class ItemDetailFragment extends Fragment {
 
 
             } else {
-                deal_price.setText(DealContent.ITEMS.get(mIndex).salePrice);
+                deal_price.setText(ItemContent.ITEMS.get(mIndex).salePrice);
             }
-            deal_price_old.setText(DealContent.ITEMS.get(mIndex).price);
+            deal_price_old.setText(ItemContent.ITEMS.get(mIndex).price);
             deal_price_old.setPaintFlags(deal_price_old.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-            deal_title.setText(DealContent.ITEMS.get(mIndex).title);
-            deal_description.setText(DealContent.ITEMS.get(mIndex).description);
+            deal_title.setText(ItemContent.ITEMS.get(mIndex).title);
+            deal_description.setText(ItemContent.ITEMS.get(mIndex).description);
         } catch (NullPointerException e) {
             return view;
         }
@@ -153,7 +153,7 @@ public class ItemDetailFragment extends Fragment {
     * */
     private void getFullImage(final ImageView imageView){
 
-        String url = DealContent.ITEMS.get(mIndex).image;
+        String url = ItemContent.ITEMS.get(mIndex).image;
 
 
         //if we are on http://lorempixel.com/
