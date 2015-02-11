@@ -39,16 +39,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.rooney.dealbrowserpoc.nameyourprice" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44890906-1cab-4013-8e79-ee6d96e56ef9" name="Default" comment="refactoring package name">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/models/DealContent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/models/ItemContent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/models/DealItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/models/ItemModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/deal_list_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_deal_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_item_detail.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_deal_list.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_item_list.xml" />
+    <list default="true" id="44890906-1cab-4013-8e79-ee6d96e56ef9" name="Default" comment="remove unused code">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/fragments/ItemDetailFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/fragments/ItemDetailFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/fragments/ItemListFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/fragments/ItemListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/adapters/ListItemAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/adapters/ListItemAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/models/ResponseObject.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/models/ResponseObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_item_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_item_detail.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Deal Browser.iws" />
@@ -72,24 +65,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ListItemAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/adapters/ListItemAdapter.java">
+      <file leaf-file-name="fragment_item_detail.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item_detail.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1230">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.925926" vertical-offset="1085" max-vertical-offset="1725">
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_item.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1050">
-              <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+      <file leaf-file-name="ItemDetailFragment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/fragments/ItemDetailFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.7228572" vertical-offset="1973" max-vertical-offset="2640">
+              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -1076,6 +1069,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/models/ItemModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/adapters/ListItemAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_item_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/fragments/ItemDetailFragment.java" />
       </list>
     </option>
   </component>
@@ -2108,7 +2103,11 @@
       <created>1423627244280</created>
       <updated>1423627244280</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="remove unused code">
+      <created>1423627805311</created>
+      <updated>1423627805311</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -2213,7 +2212,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="send price back" />
     <MESSAGE value="attemptToSubmit" />
     <MESSAGE value="format price" />
     <MESSAGE value="&gt; $1" />
@@ -2238,7 +2236,8 @@
     <MESSAGE value="NameYourPrice" />
     <MESSAGE value="Eric Rooney" />
     <MESSAGE value="refactoring package name" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring package name" />
+    <MESSAGE value="remove unused code" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unused code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2557,16 +2556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item_detail.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.99033815" vertical-offset="1835" max-vertical-offset="2475">
-          <caret line="136" column="44" selection-start-line="136" selection-start-column="44" selection-end-line="136" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_name_price.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2637,14 +2626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/adapters/ListItemAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1230">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -2652,6 +2633,33 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1050">
           <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/adapters/ListItemAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6142857" vertical-offset="505" max-vertical-offset="1230">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item_detail.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.925926" vertical-offset="1085" max-vertical-offset="1725">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rooney/poc/nameyourprice/fragments/ItemDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7228572" vertical-offset="1973" max-vertical-offset="2640">
+          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
           <folding />
         </state>
       </provider>

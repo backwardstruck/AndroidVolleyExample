@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -59,8 +58,6 @@ public class ItemDetailFragment extends Fragment {
         TextView deal_price_old = (TextView) view.findViewById(R.id.deal_price_old);
         TextView deal_title = (TextView) view.findViewById(R.id.deal_title);
         TextView deal_description = (TextView) view.findViewById(R.id.deal_description);
-        FrameLayout add_to_list = (FrameLayout) view.findViewById(R.id.add_to_list);
-        FrameLayout add_to_cart = (FrameLayout) view.findViewById(R.id.add_to_cart);
         final ImageView fullview = (ImageView) view.findViewById(R.id.fullview);
 
 
@@ -93,20 +90,6 @@ public class ItemDetailFragment extends Fragment {
         } catch (NullPointerException e) {
             return view;
         }
-
-        add_to_list.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getActivity().onBackPressed();
-            }
-        });
-
-        add_to_cart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getActivity().onBackPressed();
-            }
-        });
 
         //show full image
         deal_detail_image_view.setOnClickListener(new View.OnClickListener() {
